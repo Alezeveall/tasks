@@ -6,9 +6,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Auth from './screens/Auth';
 import TaskList from './screens/TaskList';
 
-import AuthOrApp from './screens/AuthOrApp';
-import Menu from './screens/Menu';
-
 const Drawer = createDrawerNavigator();
 
 function Navigator() {
