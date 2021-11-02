@@ -88,7 +88,7 @@ export default class Auth extends Component {
                         {this.state.stageNew ? 'Crie a sua conta' : 'Informe seus dados'}
                     </Text>
                     {this.state.stageNew &&
-                        <AuthInput icon='subscribe' placeholder='Nome'
+                        <AuthInput icon='person' placeholder='Nome'
                             value={this.state.name}
                             style={styles.input}
                             onChangeText={name => this.setState({ name })} />
@@ -102,7 +102,7 @@ export default class Auth extends Component {
                         style={styles.input} secureTextEntry={true}
                         onChangeText={password => this.setState({ password })} />
                     {this.state.stageNew &&
-                        <AuthInput icon='asterisk'
+                        <AuthInput icon='lock'
                             placeholder='Confirmação de Senha'
                             value={this.state.confirmPassword}
                             style={styles.input} secureTextEntry={true}
